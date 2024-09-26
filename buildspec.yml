@@ -27,5 +27,5 @@ phases:
       - echo "Build completed successfully!!!"
   artifacts:
     files:
-      - '*'
+      - "**/*"
     base-directory: ../flask-feedback-application
