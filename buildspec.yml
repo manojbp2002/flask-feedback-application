@@ -13,7 +13,7 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - pip install --upgrade pip
-      - pip install -r flask-feedback-application/requirements.txt
+      - pip install -r requirements.txt
   build:
     commands:
       - echo "Running tests..."
@@ -25,7 +25,3 @@ phases:
   post_build:
     commands:
       - echo "Build completed successfully!!!"
-artifacts:
-  files:
-    - '**/*'
-  base-directory: ../simple-feedback-app
