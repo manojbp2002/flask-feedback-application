@@ -1,7 +1,5 @@
-<<<<<<< HEAD
 version: 0.0
 os: linux
-
 hooks:
   ApplicationStop:
     - location: stop_container.sh
@@ -11,19 +9,3 @@ hooks:
     - location: start_container.sh
       timeout: 500
       runas: root
-
-=======
-version: 0.0
-os: linux
-
-hooks:
-  ApplicationStop:
-    - location: scripts/stop_container.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/start_container.sh
-      timeout: 300
-      runas: root
-      #change
->>>>>>> 60c8624f9677fc23707c9c97be6a9abf7fc3c350
